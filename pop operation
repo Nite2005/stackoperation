@@ -1,0 +1,35 @@
+#include<stdio.h>
+
+int main()
+{
+    int top,arr[5],n,m;
+    for(top=0;top<=5;top++)
+    {
+        if(top==5)
+        {
+            printf("stack is full\n");
+            
+        }
+        else
+        {
+            printf("enter an element: ");
+            scanf("%d",&n);
+            arr[top]=n;
+        }
+    }
+    for(top=4;top>=-1;top--)
+    {
+        if(top==-1)
+        {
+            printf("stack is empty\n");
+
+        }
+        else
+        {
+            printf("enter top most element for delete: ");
+            scanf("%d",m);
+            arr[top]=0;
+        }
+    }
+    return 0;
+}
